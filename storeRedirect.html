@@ -9,15 +9,19 @@
   <body>
     <script type="text/javascript">
       if (/iP(hone|od|ad).Mobile/.test(navigator.userAgent)) {
-        alert("App Store");
+        window.location.href =
+          "https://apps.apple.com/rw/app/deriv-go/id1550561298";
       } else if (/Android.Mobile/.test(navigator.userAgent)) {
-        alert("Android");
+        window.location.href =
+          "https://play.google.com/store/apps/details?id=com.deriv.app&hl=en&gl=US";
       } else if (/Windows Phone/.test(navigator.userAgent)) {
         alert("Windows phone");
       } else if (/webOS/.test(navigator.userAgent)) {
         alert("WebOS");
       } else if (/BlackBerry/.test(navigator.userAgent)) {
         alert("BlackBerry");
+      } else if (/Huawei/.test(navigator.userAgent)) {
+        alert("Huawei");
       } else {
         alert("Please scan using a phone");
       }
